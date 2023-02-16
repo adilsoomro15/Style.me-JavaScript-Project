@@ -1,3 +1,13 @@
 .hero {
-    font-family: ;
+font-family: 'Noto Sans Display', sans-serif;
+}
+.content {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+body {
+    background-image: linear-gradient(white, black, black);
+}
+img {
+    border: solid 2px white;
 }
