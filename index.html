@@ -1,67 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Gorden Wagener</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-  </head>
 
-  <body>
-    <!-- Hero -->
-    <div
-      class="p-5 text-center bg-image rounded-3 hero"
-      style="
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gorden Wagener</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Hero -->
+  <div class="p-5 text-center bg-image rounded-3 hero" style="
         background-image: url('images/heroimage.jpg');
         height: 600px;
         background-repeat: no-repeat;
         background-size: cover;
-      "
-    >
-      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
-        <div
-          class="d-flex justify-content-center align-items-center h-100 py-2"
-        >
-          <div class="text-white">
-            <h1 class="mb-3">Gorden Wagener</h1>
-            <h4 class="mb-3">Chief Design Officer of Mercedes Benz Group AG</h4>
-            <a class="btn btn-outline-light btn-lg" href="#info" role="button"
-              >Learn More</a
-            >
-          </div>
+      ">
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+      <div class="d-flex justify-content-center align-items-center h-100 py-2">
+        <div class="text-white">
+          <h1 class="mb-3">Gorden Wagener</h1>
+          <h4 class="mb-3">Chief Design Officer of Mercedes Benz Group AG</h4>
+          <a class="btn btn-outline-light btn-lg" href="#info" role="button">Learn More</a>
         </div>
       </div>
     </div>
-    <!-- Hero -->
-    <div class="container-fluid">
-      <div class="content" id="info">
-        <div class="row text-center pb-5 pt-5 text-white">
-          <div class="col-md-6">
-            <img
-              src="images/GordenWagener.jpeg"
-              width="750px"
-              height="516"
-              class="img-fluid"
-            />
-          </div>
+  </div>
+  <!-- Hero -->
+  <div class="container-fluid">
+    <div class="content" id="info">
+      <div class="row text-center pb-5 pt-5 text-white">
+        <div class="col-md-6">
+          <img src="images/GordenWagener.jpeg" width="750px" height="516" class="img-fluid" />
+        </div>
 
-          <div class="col-md-6 p-3">
-            <div id="contentOneTab" class="accordionPanelTab">
-            <h2>Life of Wagener</h2>
-            </div>
-            <div id="contentOne">
+        <div class="col-md-6 p-3">
+          <h2>Life of Wagener</h2>
+          <div id="lifeContentOne">
             <p>
               Wagener studied Industrial Design at the University of
               Duisburg-Essen (1990–1993), after which he specialized his studies
@@ -78,51 +58,62 @@
               purity" in 2009. Wagener was appointed Daimler's Chief Design
               Officer in 2016, becoming a board member of the company.
             </p>
-            </div>
-            <a class="btn btn-outline-light btn-lg" onclick="showContentOne()" role="button"
-              >Learn More</a
-            >
+          </div>
+          <div id="lifeContentTwo">
+            <p>
+              ADD INFO HERE
+            </p>
+          </div>
+          <div id="contentLifeOneTab" class="accordionPanelTab">
+            <a class="btn btn-outline-light btn-lg" onclick="showLifeContentOne()" role="button">Life Overview</a>
+          </div>
+          <div id="contentOneTab" class="accordionPanelTab">
+            <a class="btn btn-outline-light btn-lg" onclick="showLifeContentTwo()" role="button">Accomplishments</a>
+          </div>
         </div>
 
         <div class="row text-center pt-5 text-white">
           <div class="col-md-6">
             <div id="contentTwoTab" class="accordionPanelTab">
-            <h2>Wagener's Style</h2>
+              <h2>Wagener's Style</h2>
             </div>
-            <div id="contentTwo">
+            <div id="designContentOne">
+              <p>
+                "Important brands are characterised by their own special style -
+                that's what makes the difference. The style of our house, which we
+                have continued to refine over the past 15 years, is our design
+                philosophy of Sensual Purity. It is our aesthetic soul and the
+                core of our brand DNA. With it, we have created independent
+                product personalities and given all Mercedes brands an
+                unmistakable appearance. Our design language uniquely combines
+                beauty with the extraordinary. To create tension, for example, we
+                link opposites - this deliberate bipolarity of emotion and
+                intelligence characterises our designs. Beauty forms the emotional
+                core for us - it has its very own magic. Everything we do must be
+                aesthetic. Beauty fascinates people and exerts a great attraction
+                - all around us: in nature, in art, in fashion - and even in cars.
+                But that alone is not enough for us: We strive to give beauty the
+                additional glamour of the extraordinary. That is what we aim for
+                as Mercedes designers: revolutionary products that touch people
+                emotionally and that people absolutely want to have." - Gorden
+                Wagener
+              </p>
+            </div>
+            <div id="designContentTwo">
             <p>
-              "Important brands are characterised by their own special style -
-              that's what makes the difference. The style of our house, which we
-              have continued to refine over the past 15 years, is our design
-              philosophy of Sensual Purity. It is our aesthetic soul and the
-              core of our brand DNA. With it, we have created independent
-              product personalities and given all Mercedes brands an
-              unmistakable appearance. Our design language uniquely combines
-              beauty with the extraordinary. To create tension, for example, we
-              link opposites - this deliberate bipolarity of emotion and
-              intelligence characterises our designs. Beauty forms the emotional
-              core for us - it has its very own magic. Everything we do must be
-              aesthetic. Beauty fascinates people and exerts a great attraction
-              - all around us: in nature, in art, in fashion - and even in cars.
-              But that alone is not enough for us: We strive to give beauty the
-              additional glamour of the extraordinary. That is what we aim for
-              as Mercedes designers: revolutionary products that touch people
-              emotionally and that people absolutely want to have." - Gorden
-              Wagener
+              ADD INFO HERE
             </p>
-            </div>
-            <a class="btn btn-outline-light btn-lg" role="button" onclick="showContentTwo()"
-              >Learn More</a
-            >
+          </div>
+                      <div id="contentLifeOneTab" class="accordionPanelTab">
+            <a class="btn btn-outline-light btn-lg" onclick="showDesignContentOne()" role="button">Wagener's Insight</a>
+          </div>
+          <div id="contentOneTab" class="accordionPanelTab">
+            <a class="btn btn-outline-light btn-lg" onclick="showDesignContentTwo()" role="button">Overview</a>
+          </div>
           </div>
 
           <div class="col-md-6 p-3">
-            <img
-              src="images/StyleImage.jpg"
-              width="750px"
-              height="450px"
-              class="img-fluid"
-            />
+            <img src="images/StyleImage.jpg" width="750px" height="450px" class="img-fluid" />
           </div>
         </div>
         <div class="row text-center pt-5 text-white">
@@ -131,45 +122,27 @@
             <!-- Gallery -->
             <div class="row">
               <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                  class="w-100 shadow-1-strong rounded mb-4"
-                  alt="Boat on Calm Water"
-                />
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                  class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
 
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-                  class="w-100 shadow-1-strong rounded mb-4"
-                  alt="Wintry Mountain Landscape"
-                />
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                  class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
               </div>
 
               <div class="col-lg-4 mb-4 mb-lg-0">
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-                  class="w-100 shadow-1-strong rounded mb-4"
-                  alt="Mountains in the Clouds"
-                />
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+                  class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
 
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                  class="w-100 shadow-1-strong rounded mb-4"
-                  alt="Boat on Calm Water"
-                />
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                  class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
               </div>
 
               <div class="col-lg-4 mb-4 mb-lg-0">
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-                  class="w-100 shadow-1-strong rounded mb-4"
-                  alt="Waves at Sea"
-                />
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                  class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
 
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-                  class="w-100 shadow-1-strong rounded mb-4"
-                  alt="Yosemite National Park"
-                />
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                  class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
               </div>
             </div>
             <!-- Gallery -->
@@ -182,16 +155,12 @@
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2023 Copyright:
-        <a
-          class="text-white"
-          href="https://github.com/adilsoomro15"
-          target="blank"
-          >Adil Soomro</a
-        >
+        <a class="text-white" href="https://github.com/adilsoomro15" target="blank">Adil Soomro</a>
       </div>
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>

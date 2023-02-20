@@ -1,21 +1,53 @@
-document.getElementById('contentOne').style.display = 'none';
-document.getElementById('contentTwo').style.display = 'none';
+document.getElementById('lifeContentOne').style.display = 'none';
+document.getElementById('lifeContentTwo').style.display = 'none';
 
 function hidePanels() {
-    document.getElementById('contentOne').style.display = 'none';
-    document.getElementById('contentTwo').style.display = 'none';
-    document.getElementById('contentOneTab').className = 'accordionPanelTab';
-    document.getElementById('contentTwoTab').className = 'accordionPanelTab';
+    document.getElementById('lifeContentOne').style.display = 'none';
+    document.getElementById('lifeContentTwo').style.display = 'none';
+    document.getElementById('contentLifeOneTab').className = 'accordionPanelTab';
+    document.getElementById('contentLifeTwoTab').className = 'accordionPanelTab';
 }
 
-function showContentOne() {
+function showLifeContentOne() {
     hidePanels();
-    document.getElementById('contentOne').style.display = 'block';
-    document.getElementById('contentTwo').className = 'accordionPanelTab highlight';
+    document.getElementById('lifeContentOne').style.display = 'block';
+    document.getElementById('contentLifeOneTab').className = 'accordionPanelTab highlight';
 }
 
-function showContentTwo() {
+function showLifeContentTwo() {
     hidePanels();
-    document.getElementById('contentTwo').style.display = 'block';
-    document.getElementById('contentOne').className = 'accordionPanelTab highlight';
+    document.getElementById('lifeContentTwo').style.display = 'block';
+    document.getElementById('contentLifeTwoTab').className = 'accordionPanelTab highlight';
 }
+
+
+
+
+
+
+
+
+
+
+document.getElementById('designContentOne').style.display = 'none';
+document.getElementById('designContentTwo').style.display = 'none';
+
+function hidePanels() {
+    document.getElementById('designContentOne').style.display = 'none';
+    document.getElementById('designContentTwo').style.display = 'none';
+    document.getElementById('contentDesignOneTab').className = 'accordionPanelTab';
+    document.getElementById('contentDesignTwoTab').className = 'accordionPanelTab';
+}
+
+function showLifeContentOne() {
+    hidePanels();
+    document.getElementById('designContentOne').style.display = 'block';
+    document.getElementById('contentDesignOneTab').className = 'accordionPanelTab highlight';
+}
+
+function showLifeContentTwo() {
+    hidePanels();
+    document.getElementById('designContentTwo').style.display = 'block';
+    document.getElementById('contentDesignTwoTab').className = 'accordionPanelTab highlight';
+}
+
